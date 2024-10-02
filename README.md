@@ -139,7 +139,7 @@ This is the new component source code:
             var jsonPayload = System.Text.Json.JsonSerializer.Serialize(lambdaPayload);
 
             // API Gateway URL (replace this with your actual API Gateway URL)
-            string apiUrl = "https://g37s9y93ve.execute-api.eu-west-3.amazonaws.com/produ/luislambdas3create";
+            string apiUrl = "https://1tm8io48k4.execute-api.eu-west-3.amazonaws.com/produ/lambdacreates3bucket";
 
             // Set the request content to JSON
             var content = new StringContent(jsonPayload, System.Text.Encoding.UTF8, "application/json");
@@ -163,4 +163,21 @@ This is the new component source code:
     }
 }
 ```
+
+We copy in the code the Lambda Invoke URL:
+
+```
+// API Gateway URL (replace this with your actual API Gateway URL)
+            string apiUrl = "https://1tm8io48k4.execute-api.eu-west-3.amazonaws.com/produ/lambdacreates3bucket";
+```
+
+![image](https://github.com/user-attachments/assets/42bbb106-8167-4aa6-8f6d-7edf2261a882)
+
+Also we copy the AWS Lambda name in the apiURL
+
+![image](https://github.com/user-attachments/assets/675cddf3-0be4-47c6-8804-e70b788cafe9)
+
+## 5. We run the application and see the result
+
+
 
