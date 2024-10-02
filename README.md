@@ -20,6 +20,17 @@ Also we input a **API name** and press **Next** button
 
 ![image](https://github.com/user-attachments/assets/06c10bb2-d1d4-4536-8aa6-dcdaa01ddb77)
 
+We configure the routes and press the Next button
+
+![image](https://github.com/user-attachments/assets/77863706-1583-4c4e-af73-a65e0a18f904)
+
+We create a new Stage and press the Next button
+
+![image](https://github.com/user-attachments/assets/7ade4ba8-f276-44fd-a1c6-11b1a1122e26)
+
+Finally, we press the Create button
+
+![image](https://github.com/user-attachments/assets/b38ac881-ffca-4012-943f-7597205a3772)
 
 ## 2. 
 
