@@ -40,11 +40,30 @@ After pressing the menu option Develop->CORS we also press the Configure button
 
 ![image](https://github.com/user-attachments/assets/44ab8e50-0a8a-41c5-a031-ac071b4cd5b7)
 
-Now we have to input the allowed values for CORS
+Now we have to input the allowed values for CORS and press the Save button
 
+![image](https://github.com/user-attachments/assets/2d225195-31a9-4ec3-bc96-ac68235eafb8)
 
+After configuring CORS we have to deploy the AWS API GateWay and select the Produ Stage and press the Deploy button
 
-## 2. 
+![image](https://github.com/user-attachments/assets/f9cacd54-e594-4318-8d8e-b60fc80db056)
+
+![image](https://github.com/user-attachments/assets/bb7e8612-029e-4bd2-b6a6-ffe0de94cc6f)
+
+![image](https://github.com/user-attachments/assets/a05f4808-23c5-4089-a749-6f5eb8c0f01f)
+
+We copy the Invoke URL for setting this value in the Blazor WebAssembly application
+
+![image](https://github.com/user-attachments/assets/8aea34d6-c42e-4299-84e8-cbe47d924f89)
+
+## 2. How to create the Blazor Web Assembly application for invoking the AWS API GateWay
+
+We run Visual Studio and we select "Create a new project"
+
+We input the new project name and location in the hard disk 
+
+We leave the default values and press create
+
 
 ## 3. 
 
