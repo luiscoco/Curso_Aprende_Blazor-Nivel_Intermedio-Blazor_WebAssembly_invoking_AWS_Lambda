@@ -90,7 +90,7 @@ We have to load **AWSSDK.Lambda** package
 
 This is the new component source code:
 
-```csharp
+```razor
 @page "/s3bucket"
 @using System.ComponentModel.DataAnnotations
 @inject HttpClient Http
