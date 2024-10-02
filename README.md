@@ -1,4 +1,4 @@
-# How to invoke in a Blazor WebAssembly application a Lambda (for creating AWS S3 bucket)
+# How to invoke a Lambda from a Blazor Web Assembly Application
 
 **Important Note**:
 
