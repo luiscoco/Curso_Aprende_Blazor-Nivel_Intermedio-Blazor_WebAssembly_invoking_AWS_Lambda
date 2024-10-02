@@ -78,6 +78,10 @@ See the project folders and files structure
 
 ![image](https://github.com/user-attachments/assets/81c3464d-16d9-4dea-90af-7073887b0e6a)
 
-## 3. 
+## 3. Load the Nuget package
 
+We have to load **AWSSDK.Lambda** package
 
+![image](https://github.com/user-attachments/assets/cc4dfcfb-8f5f-4329-8f97-73d8a5f7cbb0)
+
+## 4. 
