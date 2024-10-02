@@ -80,9 +80,29 @@ See the project folders and files structure
 
 ## 3. Load the Nuget package
 
+We first set the .NET8 in the .csproj file
+
+```csproj
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Lambda" Version="3.7.405.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.0" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>
+```
+
 We have to load **AWSSDK.Lambda** package
 
-![image](https://github.com/user-attachments/assets/cc4dfcfb-8f5f-4329-8f97-73d8a5f7cbb0)
+![image](https://github.com/user-attachments/assets/d212f13f-2e33-40ba-ad0a-da29084175fc)
 
 ## 4. Create a new razor component for invoking the AWS API GateWay
 
