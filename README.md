@@ -199,5 +199,11 @@ Also we copy the AWS Lambda name in the apiURL
 
 ## 5. We run the application and see the result
 
+![image](https://github.com/user-attachments/assets/2ee76bcc-c9d3-40fb-b08f-8ac2effa47b6)
+
+We confirm in AWS Console the S3 was created
+
+![image](https://github.com/user-attachments/assets/ea478903-7cfd-40ca-8504-219c94367ae6)
+
 
 
