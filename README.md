@@ -36,7 +36,13 @@ After creating the API GateWay we have to configure the CORS
 
 ![image](https://github.com/user-attachments/assets/b4fd8959-a789-4235-875e-98e34515a59c)
 
-After pressing the menu option Develop->CORS we input the 
+After pressing the menu option Develop->CORS we also press the Configure button
+
+![image](https://github.com/user-attachments/assets/44ab8e50-0a8a-41c5-a031-ac071b4cd5b7)
+
+Now we have to input the allowed values for CORS
+
+
 
 ## 2. 
 
