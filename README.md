@@ -84,4 +84,83 @@ We have to load **AWSSDK.Lambda** package
 
 ![image](https://github.com/user-attachments/assets/cc4dfcfb-8f5f-4329-8f97-73d8a5f7cbb0)
 
-## 4. 
+## 4. Create a new razor component for invoking the AWS API GateWay
+
+![image](https://github.com/user-attachments/assets/3920f162-25e5-4b9f-bc59-86f42e2567a6)
+
+This is the new component source code:
+
+```csharp
+@page "/s3bucket"
+@using System.ComponentModel.DataAnnotations
+@inject HttpClient Http
+
+<h3>Create S3 Bucket</h3>
+
+<EditForm Model="bucketRequest" OnValidSubmit="OnSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="bucketName">S3 Bucket Name:</label>
+        <InputText id="bucketName" class="form-control" @bind-Value="bucketRequest.BucketName" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Bucket</button>
+</EditForm>
+
+<div>
+    <h4>Response:</h4>
+    <p>@responseMessage</p>
+</div>
+
+@code {
+    private S3BucketRequest bucketRequest = new S3BucketRequest();
+    private string responseMessage;
+
+    public class S3BucketRequest
+    {
+        [Required(ErrorMessage = "Bucket name is required")]
+        public string BucketName { get; set; }
+    }
+
+    private async Task OnSubmit()
+    {
+        if (string.IsNullOrEmpty(bucketRequest.BucketName))
+        {
+            responseMessage = "Bucket name cannot be empty.";
+            return;
+        }
+
+        try
+        {
+            // Set up the request body in JSON format
+            var lambdaPayload = new { BucketName = bucketRequest.BucketName };
+            var jsonPayload = System.Text.Json.JsonSerializer.Serialize(lambdaPayload);
+
+            // API Gateway URL (replace this with your actual API Gateway URL)
+            string apiUrl = "https://g37s9y93ve.execute-api.eu-west-3.amazonaws.com/produ/luislambdas3create";
+
+            // Set the request content to JSON
+            var content = new StringContent(jsonPayload, System.Text.Encoding.UTF8, "application/json");
+
+            // Call the API Gateway endpoint which triggers Lambda
+            var response = await Http.PostAsync(apiUrl, content);
+
+            if (response.IsSuccessStatusCode)
+            {
+                responseMessage = await response.Content.ReadAsStringAsync();
+            }
+            else
+            {
+                responseMessage = "Error invoking Lambda function: " + response.ReasonPhrase;
+            }
+        }
+        catch (Exception ex)
+        {
+            responseMessage = $"Exception: {ex.Message}";
+        }
+    }
+}
+```
+
