@@ -58,12 +58,25 @@ We copy the Invoke URL for setting this value in the Blazor WebAssembly applicat
 
 ## 2. How to create the Blazor Web Assembly application for invoking the AWS API GateWay
 
-We run Visual Studio and we select "Create a new project"
+We run Visual Studio and we select "**Create a new project**"
+
+![image](https://github.com/user-attachments/assets/a942c8fa-f830-4ca4-bb9b-411241f6eef7)
+
+We select the project template "**Blazor WebAssembly StandAlone App**"
+
+![image](https://github.com/user-attachments/assets/571545da-bec6-47b9-ac28-6844d13589f6)
 
 We input the new project name and location in the hard disk 
 
+![image](https://github.com/user-attachments/assets/3b8a2e24-a699-4b05-b96b-6fd262c2fc3d)
+
 We leave the default values and press create
 
+![image](https://github.com/user-attachments/assets/44a92252-fc48-43a0-90d5-085353b51522)
+
+See the project folders and files structure
+
+![image](https://github.com/user-attachments/assets/81c3464d-16d9-4dea-90af-7073887b0e6a)
 
 ## 3. 
 
